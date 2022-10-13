@@ -1,4 +1,4 @@
-package estudo.me.capgemini.exercicios;
+package Exe04;
 
 import java.util.Scanner;
 

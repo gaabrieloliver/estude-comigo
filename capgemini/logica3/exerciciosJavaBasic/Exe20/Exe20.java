@@ -1,4 +1,4 @@
-package estudo.me.capgemini.exercicios;
+package Exe20;
 /*A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com desconto. Faça
 um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente de vários carros. O
 desconto deverá ser calculado de acordo com o ano do veículo. 

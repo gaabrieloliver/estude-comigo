@@ -1,4 +1,4 @@
-package Lista_exercicios;
+package Exe25;
 
 /*Faça um algoritmo que leia dois números e identifique se são iguais ou diferentes. Caso eles sejam iguais
 imprima uma mensagem dizendo que eles são iguais. Caso sejam diferentes, informe qual número é o

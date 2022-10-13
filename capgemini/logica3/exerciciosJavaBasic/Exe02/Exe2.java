@@ -1,4 +1,4 @@
-package estudo.me.capgemini.exercicios;
+package Exe02;
 
 import java.util.*;
 public class Exe2 {
