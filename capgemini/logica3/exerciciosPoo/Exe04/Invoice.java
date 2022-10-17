@@ -1,5 +1,6 @@
 package capgemini.logica3.exerciciosPoo.Exe04;
 
+//invoice == fatura
 public class Invoice {
 
   private int codigoItem;
