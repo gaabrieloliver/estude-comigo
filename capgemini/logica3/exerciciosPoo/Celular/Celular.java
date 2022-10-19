@@ -2,11 +2,11 @@ package capgemini.logica3.exerciciosPoo.Celular;
 
 public class Celular {
   // Caracteristicas -> atributos
-  private String nome;
-  private String sistemaOperacional;
-  private int espacoArmazenamento;
-  private float tamanhoTela;
-  private boolean ligado = true;
+   String nome;
+   String sistemaOperacional;
+   int espacoArmazenamento;
+   float tamanhoTela;
+   boolean ligado = true;
  
   public void ligar(){
     if (ligado == false){
@@ -31,11 +31,7 @@ public class Celular {
   }
   
   public void status(){
-    System.out.println(nome);
-    System.out.println(sistemaOperacional);
-    System.out.println(espacoArmazenamento);
-    System.out.println(tamanhoTela);
-    System.out.println(ligado);
+    System.out.format("Celular %s com tela de %.1f, com %dgb e SO %s\nLigado? %b", nome, tamanhoTela, espacoArmazenamento, sistemaOperacional,ligado);
   }
 
 
