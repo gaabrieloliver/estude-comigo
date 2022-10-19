@@ -22,6 +22,8 @@ public class Main {
     androidCelular01.espacoArmazenamento = 256;
 
     iosCelular01.status();
+    iosCelular01.fazerLigacao("81999358927");
+    iosCelular01.ligarCamera();
     System.out.println();
     
   }

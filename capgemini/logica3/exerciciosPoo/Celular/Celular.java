@@ -1,6 +1,8 @@
 package capgemini.logica3.exerciciosPoo.Celular;
+import java.util.*;
 
 public class Celular {
+  Scanner in = new Scanner(System.in);
   // Caracteristicas -> atributos
    String nome;
    String sistemaOperacional;
@@ -15,8 +17,8 @@ public class Celular {
     System.out.println(ligado);
   }
   
-  public void fazerLigacao(){
-    
+  public void fazerLigacao(String numero){
+    System.out.format("\n%s ligou para %s porém não obteve resposta.\n",nome, numero);
   }
   
   public void desligar(){
@@ -27,7 +29,18 @@ public class Celular {
   }
   
   public void ligarCamera(){
-    
+    if (ligado == true){
+      System.out.println("Ligar câmera? Sim - S ou Nao - N ");
+      char decisao;
+      decisao = in.next().charAt(0);
+      
+      if (decisao == 's' || decisao == 'S'){
+        System.out.println("Câmera ligada");
+      } else {
+        System.out.println("Câmera desligada");
+      }
+
+    }
   }
   
   public void status(){
