@@ -1,4 +1,4 @@
-package cursoEmVideoPoo.aula04;
+package cursoEmVideo.POO.aula04;
 
 public class Caneta {
   private String modelo;

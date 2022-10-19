@@ -1,4 +1,4 @@
-package cursoEmVideoPoo.aula04;
+package cursoEmVideo.POO.aula04;
 
 public class Aula04 {
   public static void main(String[] args) {

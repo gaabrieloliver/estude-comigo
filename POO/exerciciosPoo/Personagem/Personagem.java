@@ -1,4 +1,4 @@
-package capgemini.logica3.exerciciosPoo.Personagem;
+package POO.exerciciosPoo.Personagem;
 
 import java.util.Random;
 

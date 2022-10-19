@@ -1,4 +1,4 @@
-package capgemini.logica3.exerciciosPoo.Celular;
+package POO.exerciciosPoo.Celular;
 import java.util.*;
 
 public class Celular {

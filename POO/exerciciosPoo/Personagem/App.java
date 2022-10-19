@@ -1,4 +1,4 @@
-package capgemini.logica3.exerciciosPoo.Personagem;
+package POO.exerciciosPoo.Personagem;
 
 public class App {
   public static void main(String[] args) {

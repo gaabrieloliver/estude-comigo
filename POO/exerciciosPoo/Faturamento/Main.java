@@ -1,4 +1,4 @@
-package capgemini.logica3.exerciciosPoo.Exe04;
+package POO.exerciciosPoo.Faturamento;
 
 public class Main {
   public static void main(String[] args) {

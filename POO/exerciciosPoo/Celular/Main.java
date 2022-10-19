@@ -1,4 +1,4 @@
-package capgemini.logica3.exerciciosPoo.Celular;
+package POO.exerciciosPoo.Celular;
 
 public class Main {
   public static void main(String[] args) {
