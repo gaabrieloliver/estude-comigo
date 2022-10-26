@@ -6,6 +6,6 @@
 
 ## O que vem por aí :point_down:
 
-- [Criando pacotes com o VsCode]
-- [Criando métodos Getters e Setters]
-- [Visibilidade de Atributos e Métodos (private, public)]
+- Criando pacotes com o VsCode
+- Criando métodos Getters e Setters
+- Visibilidade de Atributos e Métodos (private, public)
