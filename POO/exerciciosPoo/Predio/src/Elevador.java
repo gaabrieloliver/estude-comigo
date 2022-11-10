@@ -51,6 +51,7 @@ public Elevador (){
     this.capacidadeElevador = capacidadeElevador;
     this.totalAndares = totalAndares;
     this.andarAtual = andarAtual;
+    System.out.println("Elevador FAV iniciado");
 
   }
 
@@ -61,7 +62,7 @@ public Elevador (){
       System.out.println("Não tem espaço no elevador");
     }else{
       this.qntdPessoasNoElevador += qntdPessoas;
-      System.out.println("Entrou "+this.qntdPessoasNoElevador);
+      System.out.println("Entrou "+this.qntdPessoasNoElevador+" pessoas.");
     }
   }
 
@@ -69,7 +70,7 @@ public Elevador (){
   public void sair(int qntdPessoas){
     if (this.qntdPessoasNoElevador > 0 && qntdPessoas > 0){
       this.qntdPessoasNoElevador -= qntdPessoas;
-      System.out.println("Saiu "+this.qntdPessoasNoElevador);
+      System.out.println("Saiu "+qntdPessoas+" pessoas e ficam "+this.qntdPessoasNoElevador);
     }else {
       System.out.println("Ninguém saiu");
     }
@@ -77,24 +78,23 @@ public Elevador (){
 
   //Método que sobe andares, não deve subir se já estiver no último andar;
   public void subir(int andar){
-    setAndarAtual(andar);
-    System.out.println(getAndarAtual());
-
-    if (andar < getAndarAtual() || andar > getTotalAndares()){
+    
+    if (andar < this.andarAtual || andar > this.totalAndares){
       System.out.println("Andar inválido");
     } else {
-      getAndarAtual();
+      this.andarAtual = andar;
+      System.out.println("Elevador subiu para o "+this.andarAtual+"° andar");
     }
   }
 
   //Método que desce andares, não deve descer se já estiver no térreo;
   public void descer(int andar){
-    setAndarAtual(andar);
 
-    if (andar > getAndarAtual() || andar > getTotalAndares()) {
+    if (andar > this.andarAtual || andar > this.totalAndares) {
       System.out.println("Andar inválido");
     } else {
-      setAndarAtual(andar);
+      this.andarAtual = andar;
+      System.out.println("Elevador desceu para o " + this.andarAtual + "° andar");
     }
   }
 
