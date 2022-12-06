@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<script>
+  function lineJump(){
+    document.write("<br><br>");
+  }
+
+  function show(text){
+    document.write(text);
+    lineJump();
+  }
+
+  function calculaIMC(peso, altura) {
+    
+    var imc = peso / (altura * altura);
+    show("O IMC calculado é: "+ Math.round(imc));
+
+    if (imc > 22){
+      show("Peso ideal");
+    }else{
+      show("Abaixo do peso");
+    }
+
+  }
+
+  var gabrielPeso = 60;
+  var gabrielAltura = 1.65;
+
+  calculaIMC(gabrielPeso, gabrielAltura);
+
+
+</script>
