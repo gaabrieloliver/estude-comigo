@@ -1,0 +1,26 @@
+<meta charset="UTF-8" />
+<script>
+  function lineJump() {
+    document.write('<br>')
+    document.write('<br>')
+  }
+
+  function show(text) {
+    document.write(text)
+    lineJump()
+  }
+
+  function sort() {
+    return Math.round(Math.random() * 10)
+  }
+
+  for (var linha = 1; linha <= 3; linha++){
+    for (var coluna = 1; coluna <= 10; coluna++){
+      document.write("*");
+    }
+    
+    lineJump();
+  }
+
+  show('FIM')
+</script>
