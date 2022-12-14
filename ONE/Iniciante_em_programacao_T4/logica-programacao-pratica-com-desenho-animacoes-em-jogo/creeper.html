@@ -1,17 +1,28 @@
-<canvas width="600" height="400"></canvas>
+<canvas width="600" height="1000"></canvas>
 
 <script>
+  function desenhaTexto(x, y, texto) {
+    var tela = document.querySelector('canvas')
+    var pincel = tela.getContext('2d')
+
+    pincel.font = '25px Georgia'
+    pincel.fillStyle = 'black'
+    pincel.fillText(texto, x, y)
+  }
 
   var tela = document.querySelector('canvas');
   var pincel = tela.getContext('2d');
 
   //Retângulo 1: 350, 300 (cabeça).
-  pincel.fillStyle = 'darkgreen';
+  pincel.fillStyle = 'LimeGreen';
   pincel.fillRect(200, 50, 350, 300);
+  pincel.strokeStyle = 'black'
+  pincel.strokeRect(200, 50, 350, 300);
   
   //Retângulos 2 e 3: 90, 90 (olhos).
   pincel.fillStyle = 'black';
   pincel.fillRect(250, 110, 90, 90);
+  
   
   //Retângulos 2 e 3: 90, 90 (olhos).
   pincel.fillStyle = 'black';
@@ -27,5 +38,62 @@
 
   pincel.fillStyle = 'black';
   pincel.fillRect(410, 240, 40, 110);
+
+  //corpo
+  pincel.fillStyle = 'LimeGreen';
+  pincel.fillRect(250, 350, 250, 400);
+  pincel.strokeStyle = 'black'
+  pincel.strokeRect(250, 350, 250, 400);
+
+  //pé esquerdo
+  pincel.fillStyle = 'LimeGreen';
+  pincel.fillRect(210, 700, 165, 150);
+  pincel.fillStyle = '#2c540e';
+  pincel.fillRect(210, 850, 165, 75);
+  pincel.strokeStyle = 'black'
+  pincel.strokeRect(210, 700, 165, 150);
+  pincel.strokeRect(210, 850, 165, 75);
+  
+  //pé direito;
+  pincel.fillStyle = 'LimeGreen';
+  pincel.fillRect(375, 700, 165, 150);
+  pincel.fillStyle = '#2c540e';
+  pincel.fillRect(375, 850, 165, 75);
+  pincel.strokeStyle = 'black'
+  pincel.strokeRect(375, 700, 165, 150);
+  pincel.strokeRect(375, 850, 165, 75);
+
+  //manchas;
+  function manchar(x, y,){
+    pincel.fillStyle = 'PaleGreen';
+    pincel.fillRect(x, y, 30, 30);
+  }
+
+  //sombra
+  pincel.fillStyle = 'Green';
+  pincel.fillRect(250, 350, 250, 28)
+
+  //manchas no corpo
+  manchar(275, 455);
+  manchar(295, 645);
+  manchar(385, 378);
+  manchar(385, 555);
+  manchar(459, 455);
+  
+  //manchas nos pés
+  manchar(255, 745);
+  manchar(500, 712);
+  manchar(418, 800);
+
+  //manchas na cabeça
+  manchar(341, 120);
+  manchar(250, 280);
+  manchar(500, 240);
+
+  desenhaTexto(200, 45, '@gaabrieloliver');
+
+  
+
+  
   
 </script>
