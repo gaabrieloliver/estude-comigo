@@ -2,35 +2,55 @@
 <script>
   var tela = document.querySelector('canvas')
   var pincel = tela.getContext('2d')
-
-  pincel.fillStyle = 'green'
+  
+  pincel.fillStyle = 'grey'
   pincel.fillRect(0, 0, 600, 400)
+  
+  var cores = ['blue','red','green'];
+  var indiceCorAtual = 0; //começa com o blue;
+  
 
-  // Graças a esse parâmetro, temos acesso a várias informações sobre o evento disparado e, no caso, podemos descobrir a posição do eixo x e y da tela que o usuário clicou.;
   function desenhaAlvo(evento) {
-    var x = evento.pageX - tela.offsetLeft //corrige o espaço esquerdo da tela;
-    var y = evento.pageY - tela.offsetTop //corrige o espaço de cima da tela;
+    var x = evento.pageX - tela.offsetLeft 
+    var y = evento.pageY - tela.offsetTop 
 
     console.log(evento.pageX - tela.offsetLeft)
     console.log(evento.pageY - tela.offsetTop)
 
-    pincel.fillStyle = 'red'
+    if (evento.shiftKey){
+      
+    }
+    
+    pincel.fillStyle = cores[indiceCorAtual];
     pincel.beginPath()
-    pincel.arc(x, y, 12, 0, 2 * 3.14) //x e y de onde vai clicar;
-    pincel.fill() //pinta;
+    pincel.arc(x, y, 12, 0, 2 * 3.14) 
+    pincel.fill() 
 
     pincel.fillStyle = 'white'
     pincel.beginPath()
-    pincel.arc(x, y, 8, 0, 2 * 3.14) //x e y de onde vai clicar;
-    pincel.fill() //pinta;
+    pincel.arc(x, y, 8, 0, 2 * 3.14) 
+    pincel.fill()
 
-    pincel.fillStyle = 'red'
+    pincel.fillStyle = cores[indiceCorAtual];
     pincel.beginPath()
-    pincel.arc(x, y, 4, 0, 2 * 3.14) //x e y de onde vai clicar;
-    pincel.fill() //pinta;
+    pincel.arc(x, y, 4, 0, 2 * 3.14) 
+    pincel.fill() 
 
-    console.log(x + ',' + y) //coord. de x e y;
+    console.log(x + ',' + y) 
   }
 
-  tela.onclick = desenhaAlvo //o navegador que chamará a função, pois ele sabe identificar onde está ocorrendo os cliques dentro do canvas.
+  tela.onclick = desenhaAlvo 
+
+  function mudaCor(){
+    indiceCorAtual++;
+    if(indiceCorAtual >= cores.length){
+      indiceCorAtual = 0; // volta pra primeira posição (blue);
+    }
+  
+    return false;
+  } 
+
+  tela.oncontextmenu = mudaCor;
+
+
 </script>
