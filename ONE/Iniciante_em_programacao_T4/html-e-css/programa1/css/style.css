@@ -7,11 +7,11 @@
   color: darkblue;
 }
 
-.links {
+a {
   text-decoration: none;
 }
 
-h2 {
+h2 p{
   color: seagreen;
 }
 
@@ -19,6 +19,6 @@ p {
   font-size: 20px;
 }
 
-h1, h2, p , .links {
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
