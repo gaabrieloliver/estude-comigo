@@ -13,7 +13,7 @@
   <body>
     <header>
       <div class="caixa">
-        <h1><img src="./img/logo.png" /></h1>
+        <h1><img src="./img/logo.png" alt="Logo da barbearia" /></h1>
 
         <nav>
           <!--lista não ordenada-->
@@ -27,11 +27,120 @@
     </header>
 
     <!--Conteúdo principal-->
-    <main>Teste</main>
+    <main>
+      <form>
+        <label for="nome-sobrenome">Nome e sobrenome</label>
+        <input type="text" id="nome-sobrenome" class="input-padrao" required/>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"/>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"/>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          cols="70"
+          rows="10"
+          id="mensagem"
+          class="input-padrao" required ></textarea>
+
+        <!--Grupo de campos de formuláro deve ser definido como fieldset, os títulos são chamados pela tag legend-->
+        <fieldset>
+          <legend>Como prefere nosso contato?</legend>
+          
+
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio-email"
+            />Email</label
+          >
+
+          <label for="radio-telefone"
+            ><input
+              type="radio"
+              name="contato"
+              value="telefone"
+              id="radio-telefone"
+            />Telefone</label
+          >
+
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contato"
+              value="whatsapp"
+              id="radio-whatsapp" checked
+            />Whatsapp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Qual o dia prefere ser atendido?</legend>
+          <select>
+            <option>Segunda</option>
+            <option>Quarta</option>
+            <option>Sexta</option>
+          </select>
+
+          <legend>Qual horário prefere ser atendido?</legend>
+          <select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+
+        </fieldset>
+
+        <label class="checkbox"
+          ><input type="checkbox" checked/>Gostaria de receber nossas novidades por
+          email?</label
+        >
+
+        <input type="submit" value="Enviar formulário" class="enviar"/>
+      </form>
+
+      <table>
+        <!--Cabeça da tabela-->
+        <thead>
+          <!--Table row (Marcar linhas)-->  
+          <tr>
+            <!--Células-->
+            <td>Dia</td>
+            <td>Horário</td>
+          </tr>
+        </thead>
+
+        <!--Corpo tabela-->
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>08h~20h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>08h~20h</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>08h~20h</td>
+          </tr>
+        </tbody>
+
+        <!--Rodapé tabela-->
+        <tfoot>
+        </tfoot>
+
+      </table>
+
+    </main>
 
     <!--Rodapé-->
     <footer>
-      <img class="logo-branco" src="./img/logo-branco.png">
+      <img class="logo-branco" src="./img/logo-branco.png" alt="Logo da Barbearia" />
       <p class="copyright">&copy; Copyright Barbearia</p>
     </footer>
   </body>

@@ -118,3 +118,72 @@ footer {
   margin: 10px;
   text-align: center;
 }
+
+main {
+  width: 940px;
+  margin: 0 auto;
+  
+}
+
+form {
+  margin: 40px 0;
+  
+}
+
+form label, form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px; /*margin para baixo*/
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+  border-radius: 10px;
+  border-color: #000000;
+}
+
+.checkbox {
+  margin: 20px 0px;
+}
+
+.enviar {
+  background-color: orange;
+  color: black;
+  border-radius: 15px;
+  padding: 15px 0;
+  width: 40%;
+  font-size: 18px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
+  transform: scale(1.1);
+}
+
+table {
+  width: 40%;
+  margin: 20px 0px 40px;
+  
+}
+
+thead {
+  background: orange;
+  color: black;
+}
+
+td , th{
+  border: 1px solid #000000;
+  padding: 8px 15px;
+  border: 2px solid;
+}
+
+select {
+  border-radius: 5px;
+  border: 1px solid #000000;
+
+}
