@@ -4,23 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style-home.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <!--1° A ordem importa-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--2°-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <title>Barbearia Alura</title>
   </head>
 
-  <body>
+  <body >
     <header>
-      <h1 class="titulo-principal">Barbearia Alura</h1>
+      <div class="caixa">
+        <h1><img src="./img/logotipo-de-barbearia-vintage-1024x1024-removebg-preview.png" width="250px"/> </h1>
+
+        <nav>
+          <!--lista não ordenada-->
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./contato.html">Contatos</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <img id="banner" src="./img/bg-barber.png" />
-    
-    <div class="principal">
-      <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+
+    <!-- Estilo = class; Comportamento = id -->
+    <img class="banner" src="./img/wp3067027.jpg" />
+
+    <main>
+      <section class="principal">
+      <h2 class="titulo-principal">Sobre a Barber Shop</h2>
+
+      <img class="pole" src="./img/image-asset.jpeg" alt="Pole de Barbeiros com listras azul, vermelho e branco."/>
 
       <p>
-        Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz
+        Localizada no Shopping Recife a <strong>Barber Shop</strong> traz
         para o mercado o que há de melhor para o seu cabelo e barba. Fundada em
-        2019, a Barbearia Alura já é destaque na cidade e conquista novos
+        2022, a Barber Shop já é destaque na cidade e conquista novos
         clientes a cada dia.
       </p>
 
@@ -39,19 +60,39 @@
         moda. O atendimento possui padrão de excelência e agilidade, garantindo
         qualidade e satisfação dos nossos clientes.
       </p>
-    </div>
+      </section>
 
-    <div class="beneficios">
-      <h3 class="class="titulo-centralizado">Benefícios</h3>
+      <section class="mapa">
+        <h3 class="titulo-principal">Nosso estabelecimento</h3>
+        <p>Estamos atendendo diretamente do Shopping Recife</p>
 
-      <ul>
-        <li class="itens">Atendimento aos Clientes</li>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11171.802677680771!2d-34.90059766777273!3d-8.118915753906673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f427968d6cb%3A0x34787df94f76a149!2sShopping%20Recife!5e0!3m2!1spt-BR!2sbr!4v1672193647866!5m2!1spt-BR!2sbr" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+      </section>
+
+    <section class="beneficios">
+      <h3 class="titulo-principal">Benefícios</h3>
+
+      <div class="conteudo-beneficios">
+      <ul class="lista-beneficios">
+        <li class="itens"><spar>Atendimento aos Clientes</spar></li>
         <li class="itens">Espaço diferenciado</li>
         <li class="itens">Localização</li>
         <li class="itens">Profissionais Qualificados</li>
-      </ul>
-
-      <img src="./beneficios.jpg" class="imagemBeneficios">
+      </ul><img src="./beneficios.jpg" class="imagem-beneficios">
     </div>
+
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8pWtdanVz3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+
+    </section>
+    </main>
+
+    <footer>
+      <img class="logo-branco" src="./img/logo-branca-cadeira.png" />
+      <p class="copyright">&copy; Copyright Barber Shop</p>
+    </footer>
   </body>
 </html>
